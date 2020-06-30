@@ -10,5 +10,3 @@ Variable customerQuery, which is used as a filter in search, can be changed to a
 2. SetJuniperACLs.py - a script used to configure ACLs on a Juniper switch. Firstly it collects Juniper's interfaces where interface descriptions contain the same parameter which is used in the search filter in the printNipapPrefixesToFiles.py script (in this case it is Nipap's "customer_id"). Then Nipap prefix file is read and ACLs are created/configured for the collected Juniper's interfaces in order for the specific interface to include only those IPs which are set in Nipap for the specific "customer_id" parameter. 
 
 Note: If Juniper interfaces' descriptions do not contain the filter parameter ("customer_id"), ACLs won't be configured.
-
-In the future SetJuniperACLs.py script will also have a function that removes deprecated ACLs from Junipers.
